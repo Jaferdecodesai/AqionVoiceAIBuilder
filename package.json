@@ -1,0 +1,32 @@
+{
+  "name": "aqion-voice-agent-builder",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server/dev-server.js",
+    "dev:vite": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "start": "node server/dev-server.js",
+    "deploy": "npm ci --omit=dev && npm run build"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^5.1.1",
+    "express": "^5.2.1",
+    "lucide-react": "^0.561.0",
+    "mammoth": "^1.10.0",
+    "multer": "^2.0.2",
+    "nodemailer": "^9.0.3",
+    "pdf-parse": "^1.1.1",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "retell-client-js-sdk": "^2.0.8",
+    "vite": "^7.3.0",
+    "ws": "^8.21.1"
+  },
+  "devDependencies": {
+    "playwright": "^1.57.0",
+    "three": "^0.182.0"
+  }
+}
